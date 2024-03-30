@@ -1,0 +1,39 @@
+/* 전체 페이지 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* 글 목록 스타일 설정 */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 제목 스타일 설정 */
+li strong {
+    font-size: 20px;
+    color: #333;
+}
+
+/* 작성일시 스타일 설정 */
+li p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* 내용 스타일 설정 */
+li div {
+    font-size: 16px;
+    color: #444;
+}

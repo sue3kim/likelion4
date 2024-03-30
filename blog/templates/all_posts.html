@@ -1,0 +1,31 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Posts</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}">
+
+</head>
+<body>
+    <h1>All Posts</h1>
+    <ul>
+    {% for post in all_posts %}
+        <li style="background-color: lightgray; color: black; margin-bottom: 10px; border: 1px solid gray; padding: 10px;">
+            <strong>{{ post.title }}</strong>
+            <div>
+                {{ post.content }}
+            </div>
+            <p>{{ post.created_at }}</p>
+            <strong><a href="{% url 'detail' blog_id=post.id %}" style="color: white;">{{ post.title }}</a></strong>
+            <span> (<a href="{% url 'detail' blog_id=post.id %}" style="color: white;">이동하기</a>)</span>
+            <div></div>
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+
+
+</html>
